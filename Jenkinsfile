@@ -1,6 +1,6 @@
 podTemplate(containers: [
     containerTemplate(name: 'php', image: 'php:7.4-cli', ttyEnabled: true, command: 'cat'),
-    containerTemplate(name: 'phpunit', image: 'phpunit/phpunit', ttyEnabled: true, command: 'cat')
+    containerTemplate(name: 'composer', image: 'composer', ttyEnabled: true, command: 'cat')
   ]) {
   node(POD_LABEL) {
         stage('Get php project') {
@@ -10,9 +10,12 @@ podTemplate(containers: [
                     sh 'echo "im in a php container"'
                 }
             }
-	    container('phpunit') {
-	       stage('running unit test') {
-                	sh 'phpunit tests'
+	    container('composer') {
+	       stage('Prepare') {
+                	sh 'composer install'
+		}
+		stage('Run tests') {
+			sh 'phpunit tests'
 		}
             }
         }
