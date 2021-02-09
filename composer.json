@@ -8,7 +8,5 @@
             "email": "jeanbaptiste.joffre@gmail.com"
         }
     ],
-    "require-dev": {
-        "phpunit/phpunit": "^7"
-    }
+    "require": {}
 }

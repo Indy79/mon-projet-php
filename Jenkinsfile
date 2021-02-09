@@ -1,6 +1,6 @@
 podTemplate(containers: [
     containerTemplate(name: 'php', image: 'php:7.4-cli', ttyEnabled: true, command: 'cat'),
-    containerTemplate(name: 'phpunit', image: 'phpunit/phpunit:7.4.0', ttyEnabled: true, command: 'cat')
+    containerTemplate(name: 'phpunit', image: 'phpunit:7.4.0', ttyEnabled: true, command: 'cat')
   ]) {
   node(POD_LABEL) {
         stage('Get php project') {
