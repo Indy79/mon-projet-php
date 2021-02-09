@@ -4,7 +4,7 @@ podTemplate(containers: [
   ]) {
   node(POD_LABEL) {
         stage('Get php project') {
-            git branch: "${params.BRANCH}", url: 'https://github.com/Indy79/mon-projet-php.git'
+            git branch: "${env.BRANCH_NAME}", url: 'https://github.com/Indy79/mon-projet-php.git'
             container('php') {
                 stage('Echo something inside php') {
                     sh 'echo "im in a php container"'
@@ -18,7 +18,7 @@ podTemplate(containers: [
 			sh './vendor/bin/phpunit tests'
 		}
 		stage('Run quality code') {
-			sh './vendor/bin/phpcs src/'
+			sh './vendor/bin/phpcs -n --standard=PEAR src/'
 		}
             }
         }
