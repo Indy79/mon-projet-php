@@ -4,7 +4,7 @@ podTemplate(containers: [
   ]) {
   node(POD_LABEL) {
         stage('Get php project') {
-            git 'https://github.com/Indy79/mon-projet-php.git'
+            git branch: "${params.BRANCH}", url: 'https://github.com/Indy79/mon-projet-php.git'
             container('php') {
                 stage('Echo something inside php') {
                     sh 'echo "im in a php container"'
