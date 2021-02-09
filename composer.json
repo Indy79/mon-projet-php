@@ -1,0 +1,12 @@
+{
+    "name": "jbjoffre/mon-projet-php",
+    "description": "projet php de test jenkins",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jean-baptiste JOFFRE",
+            "email": "jeanbaptiste.joffre@gmail.com"
+        }
+    ],
+    "require": {}
+}
