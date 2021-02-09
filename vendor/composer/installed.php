@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '8d0b890d15e8f02dbcd0e608eec7c4f0693a6678',
+    'reference' => 'da729e0be2f6431e2b3ad4b29853fb2400964db4',
     'name' => 'jbjoffre/mon-projet-php',
   ),
   'versions' => 
@@ -27,7 +27,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '8d0b890d15e8f02dbcd0e608eec7c4f0693a6678',
+      'reference' => 'da729e0be2f6431e2b3ad4b29853fb2400964db4',
     ),
     'myclabs/deep-copy' => 
     array (
