@@ -17,6 +17,9 @@ podTemplate(containers: [
 		stage('Run tests') {
 			sh './vendor/bin/phpunit tests'
 		}
+		stage('Run quality code') {
+			sh './vendor/bin/phpcs src/'
+		}
             }
         }
   }

@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'da729e0be2f6431e2b3ad4b29853fb2400964db4',
+    'reference' => '056736d9ec76a9c743ca2c370c1c76b3f8b0dacf',
     'name' => 'jbjoffre/mon-projet-php',
   ),
   'versions' => 
@@ -51,7 +51,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'da729e0be2f6431e2b3ad4b29853fb2400964db4',
+      'reference' => '056736d9ec76a9c743ca2c370c1c76b3f8b0dacf',
     ),
     'myclabs/deep-copy' => 
     array (
@@ -326,6 +326,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'squizlabs/php_codesniffer' => 
+    array (
+      'pretty_version' => '3.5.8',
+      'version' => '3.5.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d583721a7157ee997f235f327de038e7ea6dac4',
     ),
     'symfony/polyfill-ctype' => 
     array (
