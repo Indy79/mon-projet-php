@@ -15,7 +15,7 @@ podTemplate(containers: [
                 	sh 'composer install'
 		}
 		stage('Run tests') {
-			sh 'phpunit tests'
+			sh './vendor/bin/phpunit tests'
 		}
             }
         }
